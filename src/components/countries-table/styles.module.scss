@@ -1,0 +1,127 @@
+.mondayBoardContainer {
+  padding: 200px;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #4b4e69 !important;
+}
+
+.searchContainer {
+  width: auto;
+  box-sizing: border-box;
+  padding: 0 0px;
+  margin-bottom: 20px;
+  background-color: transparent !important;
+}
+
+.countryListContainer {
+  margin-top: 20px;
+  max-height: 400px;
+  overflow-y: auto;
+  border-radius: 4px;
+  background-color: #262630;
+  padding: 0 0px;
+  box-sizing: border-box;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.columns {
+  margin: auto;
+}
+
+.countryTable {
+  width: auto;
+  border-collapse: collapse;
+  background-color: transparent;
+  table-layout: fixed;
+  border-left: 10px solid #ff158a !important;
+  border-top: none !important;
+  box-shadow: 0 0 0 1px white;
+
+  :global {
+    --primary-background-color: #30324e;
+    --primary-background-hover-color: #31313d;
+  }
+
+  & :global([role="cell"]) {
+    background-color: #30324e !important;
+    padding: 12px 15px;
+    border-right: 1px solid #4b4e69 !important;
+    border-bottom: 1px solid #4b4e69 !important;
+    font-size: 14px;
+    text-align: left;
+    color: #fff !important;
+
+    &:focus-within {
+      background-color: #31313d !important;
+      color: #fff !important;
+      outline: 2px solid #0073ea !important;
+    }
+
+    & > * {
+      color: #fff !important;
+    }
+  }
+
+  & :global(.vibe-table-header-cell) {
+    background-color: #1a1a24 !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none !important;
+
+    color: #fff !important;
+    & > * {
+      color: #fff !important;
+    }
+  }
+}
+
+.countryTableRow {
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  border-bottom: 1px solid #4b4e69 !important;
+
+  &:hover {
+    background-color: #31313d !important;
+  }
+
+  &:last-child :global([role="cell"]) {
+    border-bottom: none !important;
+  }
+}
+
+.regionTag {
+  border-radius: 4px;
+  padding: 4px 8px;
+  display: inline-block;
+  color: #fff !important;
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+.noResultsText {
+  padding: 20px;
+  text-align: center;
+  color: #fff !important;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centeredContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+  padding: 20px;
+  flex-grow: 1;
+}

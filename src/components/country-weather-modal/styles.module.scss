@@ -1,0 +1,81 @@
+.darkModal {
+  background-color: #262630 !important;
+  border: 1px solid #4b4e69 !important;
+
+  & :global(.vibe-modal-header) {
+    background-color: #1a1a24 !important;
+    border-bottom: 1px solid #4b4e69 !important;
+    padding: 15px 20px;
+
+    & > h2,
+    & > p {
+      color: #fff !important;
+    }
+  }
+
+  & :global(.vibe-modal-content) {
+    background-color: #262630 !important;
+    color: #fff !important;
+    padding: 20px;
+  }
+}
+
+.modalContent {
+  h2,
+  h3 {
+    color: #fff !important;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  p {
+    color: #ccc !important;
+    margin-bottom: 5px;
+  }
+}
+
+.weatherInfo {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #30324e;
+  border-radius: 4px;
+}
+
+.weatherIcon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.noWeatherData {
+  font-style: italic;
+  color: #999 !important;
+}
+
+.modalFooter {
+  padding: 15px 20px;
+  border-top: 1px solid #4b4e69;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalFooter :global(.vibe-component-button) {
+  background-color: transparent !important;
+  color: #fff !important;
+  border: 1px solid #4b4e69 !important;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #31313d !important;
+  }
+}
+
+.centeredContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  min-height: 150px;
+  padding: 20px;
+  flex-grow: 1;
+}
