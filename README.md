@@ -8,7 +8,7 @@ To run the application, use the following commands:
 git clone https://github.com/rpablogomes/worktables.ui
 cd worktables.ui
 yarn install
-yarn start:
+yarn start
 ```
 
 The frontend server is available at: http://localhost:3000 and is to be used as a Monday.com app.
